@@ -1,0 +1,10 @@
+<extend name="Public:common" />
+<block name="content">
+	<div id="content">
+		<ul>
+			<volist name="articlelist" id="vo">
+				<li><a href="{:U('details',array('id'=>$vo['id']))}">{:$vo['title']}</a></li>
+			</volist>
+		</ul>
+	</div>
+</block>

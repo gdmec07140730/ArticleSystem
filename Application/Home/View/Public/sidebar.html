@@ -1,0 +1,9 @@
+<div id="body">
+    	<div id="sidebar" >
+    		<ul>
+    			<li><a href="{:U('lists',array('id'=>0))}">全部</a></li>
+    			<volist name="categorylist" id="vo">
+    				<li><a href="{:U('lists',array('id'=>$vo['id']))}">{$vo['name']}</a></li>
+    			</volist>
+    		</ul>
+    	</div>
